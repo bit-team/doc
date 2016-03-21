@@ -13,38 +13,58 @@ Overview
 Main Toolbar
 ++++++++++++
 
-Take Snapshot
--------------
+.. |take_snapshot|      image:: _images/document-save.svg
+.. |refresh_snapshot|   image:: _images/view-refresh.svg
+.. |snapshot_name|      image:: _images/gtk-edit.svg
+.. |remove_snapshot|    image:: _images/edit-delete.svg
+.. |view_snapshot_log|  image:: _images/text-plain.svg
+.. |view_last_log|      image:: _images/document-new.svg
+.. |settings|           image:: _images/gtk-preferences.svg
+.. |shutdown|           image:: _images/system-shutdown.svg
+.. |exit|               image:: _images/window-close.svg
+.. |help|               image:: _images/help-contents.svg
 
-Take a new Snapshot in background. The main window can be closed during taking
-the snapshot. You can alternative take a new Snapshot with ``checksums`` option
-enabled. This will calculate checksums for every file to decide if the file has
-changed. Normal behavior is to only compare  files size and modification time.
-This takes a lot more time but it will make sure, the destination files won't
-be corrupt.
+|take_snapshot| Take Snapshot
+    Take a new Snapshot in background. The main window can be closed during
+    taking the snapshot. You can alternative take a new Snapshot with
+    ``checksums`` option enabled. This will calculate checksums for every
+    file to decide if the file has changed. Normal behavior is to only compare
+    files size and modification time. This takes a lot more time but it will
+    make sure, the destination files won't be corrupt.
 
-Refresh Snapshots List
-----------------------
+|refresh_snapshot| Refresh Snapshots List
+    Refresh the Snapshots in Timeline.
 
-Snapshot Name
--------------
+|snapshot_name| Snapshot Name
+    Add a name for a Snapshot so you can easily identify it later.
+    If ``Don't remove named snapshots`` in
+    :menuselection:`Settings --> Auto-remove` is enabled this will also prevent
+    the Snapshot from being removed.
 
-Remove Snapshot
----------------
+|remove_snapshot| Remove Snapshot
+    Remove one or more Snapshots from Timeline. ``Now`` can not be removed as
+    this is no Snapshot but the live view of the local filesystem.
 
-View Snapshot Log
------------------
+|view_snapshot_log| View Snapshot Log
+    View the log of the selected Snapshot. This is grayed out if ``Now`` is
+    selected.
 
-View Last Log
--------------
+|view_last_log| View Last Log
+    View the log from the last snapshot attempt.
 
-Settings
---------
+|settings| Settings
+    Open :doc:`/settings`
 
-Shutdown System after Snapshot has finished
--------------------------------------------
+|shutdown| Shutdown System after Snapshot has finished
+    Shutdown the computer and switch power off after a snapshot has finished.
+    The main window must stay open for this. If shutdown is not supported on
+    the system this button will be grayed out.
 
+|exit| Exit
+    Close the main window. Running Snapshots will remain in background.
 
+|help| Help
+    Menu with links to this help, FAQ, report bugs...
 
 Files Toolbar
 +++++++++++++
