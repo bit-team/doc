@@ -56,7 +56,7 @@ author = 'Germar Reitze'
 # built documents.
 #
 # The short X.Y version.
-version = '1.1.12'
+version = '1.1'
 # The full version, including alpha/beta/rc tags.
 release = '1.1.12'
 
@@ -109,7 +109,7 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -201,7 +201,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'BackInTimedoc'
+htmlhelp_basename = 'BackInTimeDoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
