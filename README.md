@@ -1,2 +1,3 @@
-# doc
-Documentation of Back In Time
+##Documentation of Back In Time
+
+http://backintime.rtfd.org/

@@ -26,6 +26,6 @@ Introduction
     :alt:    Back In Time main window
     :align:  left
 
-Back In Time is a simple backup solution. It is based on ``rsync`` and uses
-hard-links to reduce space used for unchanged files. It comes with a Qt4 GUI
-which will run on both Gnome and KDE based Desktops.
+Back In Time is a simple backup solution for Linux Desktops. It is based on
+``rsync`` and uses hard-links to reduce space used for unchanged files.
+It comes with a Qt4 GUI which will run on both Gnome and KDE based Desktops.
