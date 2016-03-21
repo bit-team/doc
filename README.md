@@ -1,5 +1,8 @@
 ##Documentation of Back In Time
 
+[![Documentation Status](https://readthedocs.org/projects/backintime/badge/?version=latest)](http://backintime.readthedocs.org/en/latest/?badge=latest)
+
+
 This is the source of the new documentation of Back In Time. The documentation
 it self is in http://backintime.rtfd.org/
 
