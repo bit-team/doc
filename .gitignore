@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# editor backup
+*~
+*.sic
+
+#sphinx doc build
+_build/doctrees
+_build/html
