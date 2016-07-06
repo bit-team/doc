@@ -41,13 +41,19 @@ Main Toolbar
     :menuselection:`Settings --> Auto Remove` is enabled this will also prevent
     the Snapshot from being removed.
 
+    If this button is grayed out you need to select a snapshot in `Timeline`_.
+
 |remove_snapshot| Remove Snapshot
     Remove one or more Snapshots from Timeline. ``Now`` can not be removed as
     this is no Snapshot but the live view of the local filesystem.
 
+    If this button is grayed out you need to select a snapshot in `Timeline`_.
+
 |view_snapshot_log| View Snapshot Log
     View the log of the selected Snapshot. This is grayed out if ``Now`` is
     selected.
+
+    If this button is grayed out you need to select a snapshot in `Timeline`_.
 
 |view_last_log| View Last Log
     View the log from the last snapshot attempt.
@@ -86,6 +92,8 @@ Files Toolbar
 |restore| Restore
     Restore selected files or folders. This button has a submenu (hold down
     the button). Default action is ``Restore``.
+
+    If this button is grayed out you need to select a snapshot in `Timeline`_.
 
     |restore| Restore
         Restore the selected files or folders to the original destination.
