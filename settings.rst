@@ -1,6 +1,9 @@
 Settings
 ========
 
+Profile
++++++++
+
 General
 +++++++
 
@@ -31,6 +34,9 @@ SSH Encrypted
 .. image:: _images/settings_general_ssh_encrypted.png
     :target: _images/settings_general_ssh_encrypted.png
     :alt:    Settings - General
+
+Advanced
+--------
 
 Schedule
 --------

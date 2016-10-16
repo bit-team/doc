@@ -111,13 +111,13 @@ Files Toolbar
 
     |restore| Restore and delete new files
         Restore selected files or folders to the original destination and
-        delete files/folders in which are not in the snapshot. This will also
+        delete files/folders which do not exist in the snapshot. This will also
         delete files/folders which where excluded during taking the snapshot!
         Be extremely careful!!!
 
     |restore| Restore '/path' and delete new files
         Restore the currently shown folder and all its content to the original
-        destination and delete files/folders in which are not in the snapshot.
+        destination and delete files/folders which do not exist in the snapshot.
         This will also delete files/folders which where excluded during taking
         the snapshot! Be extremely careful!!!
 
@@ -137,6 +137,15 @@ Snapshots altogether.
 
 Files View
 ++++++++++
+Depending on selection in left hand `Timeline` this will either show the
+original files or the files in the selected snapshot. You can jump directly to
+your home or include folders in ``Shortcuts``.
+
 
 Statusbar
 +++++++++
+
+Show current status. While a snapshot is running this will show a progressbar
+combined with current speed, already transfered data and the last message from
+``rsync``.
+
