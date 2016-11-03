@@ -45,7 +45,7 @@ Main Toolbar
 
 |remove_snapshot| Remove Snapshot
     Remove one or more Snapshots from Timeline. ``Now`` can not be removed as
-    this is no Snapshot but the live view of the local filesystem.
+    this is no Snapshot but the live view of the local file-system.
 
     If this button is grayed out you need to select a snapshot in `Timeline`_.
 
@@ -90,7 +90,7 @@ Files Toolbar
     Toggle hidden files (starting with a dot) to be shown in files view.
 
 |restore| Restore
-    Restore selected files or folders. This button has a submenu (hold down
+    Restore selected files or folders. This button has a sub-menu (hold down
     the button). Default action is ``Restore``.
 
     If this button is grayed out you need to select a snapshot in `Timeline`_.
@@ -129,15 +129,15 @@ Timeline
 ++++++++
 
 The Timeline lists all Snapshots which where already taken. You can browse them
-to see its contents in right hand `Files View`. The first item ``Now`` is not
-a Snapshot. It is a live view on the local filesystem. It shows exact the same
+to see its contents in right hand `Files View`_. The first item ``Now`` is not
+a Snapshot. It is a live view on the local file-system. It shows exact the same
 as your normal file browser. Multi selection is possible to remove multiple
 Snapshots altogether.
 
 
 Files View
 ++++++++++
-Depending on selection in left hand `Timeline` this will either show the
+Depending on selection in left hand `Timeline`_ this will either show the
 original files or the files in the selected snapshot. You can jump directly to
 your home or include folders in ``Shortcuts``.
 
@@ -145,7 +145,6 @@ your home or include folders in ``Shortcuts``.
 Statusbar
 +++++++++
 
-Show current status. While a snapshot is running this will show a progressbar
+Show current status. While a snapshot is running this will show a progress-bar
 combined with current speed, already transfered data and the last message from
 ``rsync``.
-

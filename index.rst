@@ -32,7 +32,7 @@ Introduction
 It comes with a Qt5 GUI which will run on both Gnome and KDE based Desktops.
 `Back In Time` is written in Python3 and is licensed under GPL2.
 
-Backups are stored in plain text. They can be browesed with a normal filebrowser
+Backups are stored in plain text. They can be browsed with a normal file-browser
 or in Terminal which makes it possible to restore files even without
 `Back in Time`. Files ownership, group and permissions are stored in a
 separate compressed plain text file (``fileinfo.bz2``). If the backup drive
