@@ -33,7 +33,7 @@ Main Toolbar
     make sure, the destination files won't be corrupt.
 
 |refresh_snapshot| Refresh Snapshots List
-    Refresh the Snapshots in Timeline.
+    Refresh the Snapshots in `Timeline`_.
 
 |snapshot_name| Snapshot Name
     Add a name for a Snapshot so you can easily identify it later.
@@ -50,8 +50,7 @@ Main Toolbar
     If this button is grayed out you need to select a snapshot in `Timeline`_.
 
 |view_snapshot_log| View Snapshot Log
-    View the log of the selected Snapshot. This is grayed out if ``Now`` is
-    selected.
+    View the log of the selected Snapshot.
 
     If this button is grayed out you need to select a snapshot in `Timeline`_.
 
@@ -62,7 +61,7 @@ Main Toolbar
     Open :doc:`/settings`.
 
 |shutdown| Shutdown System after Snapshot has finished
-    Shutdown the computer and switch power off after a snapshot has finished.
+    Shutdown the computer and poweroff after a snapshot has finished.
     The main window must stay open for this. If shutdown is not supported on
     the system this button will be grayed out.
 
