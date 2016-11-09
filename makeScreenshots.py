@@ -200,4 +200,4 @@ with TemporaryDirectory() as tmp:
     settings.tabs.setCurrentIndex(5)
 
     setScreenshotTimer(settings, '_images/settings_expert_options.png',
-                       hight = 650)
+                       hight = 670)

@@ -114,8 +114,8 @@ known to be insecure. You can run ``backintime benchmark-cipher`` to compare
 transfer speed of all ciphers.
 
 In ``Private Key`` you need to select your private SSH key. If this does not yet
-exist, you can create a new public/private key without password by clicking on
-|add|
+exist, you can create a new public/private SSH key without password by clicking
+on |add|
 
 Enter the private key password in ``SSH private key`` (this is the password you
 chose above during creating the public/private key pair, not the login password
