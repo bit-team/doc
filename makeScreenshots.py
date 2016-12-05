@@ -20,6 +20,7 @@ import os
 import subprocess
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import QTimer
+from PyQt5.QtWidgets import QDialog
 from tempfile import TemporaryDirectory, NamedTemporaryFile
 from time import sleep
 from datetime import date, time, datetime, timedelta
@@ -34,10 +35,13 @@ import qttools
 import config
 import snapshots
 from guiapplicationinstance import GUIApplicationInstance
+from snapshotsdialog import SnapshotsDialog
+from logviewdialog import LogViewDialog
 
 def setScreenshotTimer(widget, filename, width = 720, hight = 480):
     widget.move(100, 50)
-    widget.resize(width, hight)
+    if width and hight:
+        widget.resize(width, hight)
     widget.show()
     scrTimer = QTimer(widget)
     scrTimer.setInterval(1000)
@@ -51,6 +55,45 @@ def setScreenshotTimer(widget, filename, width = 720, hight = 480):
 
     scrTimer.start()
     quitTimer.start()
+    qapp.exec_()
+
+def setScreenshotTimerDlg(mainWindow, dlgFunct, filename):
+    def close():
+        for child in mainWindow.children():
+            if isinstance(child, QDialog):
+                child.close()
+
+    mainWindow.hide()
+
+    def moveDlg():
+        for child in mainWindow.children():
+            if isinstance(child, QDialog):
+                child.move(100, 50)
+
+    dlgTimer = QTimer(mainWindow)
+    dlgTimer.setInterval(10)
+    dlgTimer.setSingleShot(True)
+    dlgTimer.timeout.connect(dlgFunct)
+
+    dlgMoveTimer = QTimer(mainWindow)
+    dlgMoveTimer.setInterval(100)
+    dlgMoveTimer.setSingleShot(True)
+    dlgMoveTimer.timeout.connect(moveDlg)
+
+    scrTimer = QTimer(mainWindow)
+    scrTimer.setInterval(2000)
+    scrTimer.setSingleShot(True)
+    scrTimer.timeout.connect(lambda: takeScreenshot(filename))
+
+    quitTimer = QTimer(mainWindow)
+    quitTimer.setInterval(2500)
+    quitTimer.setSingleShot(True)
+    quitTimer.timeout.connect(close)
+
+    scrTimer.start()
+    quitTimer.start()
+    dlgTimer.start()
+    dlgMoveTimer.start()
     qapp.exec_()
 
 def takeScreenshot(filename):
@@ -68,8 +111,40 @@ with TemporaryDirectory() as tmp:
     cfg.setSnapshotsPath(tmp)
     cfg.setInclude([('/home/janedoe', 0),])
     cfg.checkConfig()
+    cfg.save()
 
     sn = snapshots.Snapshots(cfg)
+    rootSid = snapshots.RootSnapshot(cfg)
+
+    global qapp
+    qapp = qttools.createQApplication(cfg.APP_NAME)
+    translator = qttools.translator()
+    qapp.installTranslator(translator)
+
+    #########################
+    ### Snapshot Log View ###
+    #########################
+
+    cmd = ['../backintime/common/backintime', '--config', cfgFile, 'backup']
+    proc = subprocess.Popen(cmd)
+    proc.communicate()
+
+    mainWindow = app.MainWindow(cfg, appInstance, qapp)
+    log = LogViewDialog(mainWindow, snapshots.lastSnapshot(cfg))
+    setScreenshotTimer(log, '_images/snapshot_log_view.png')
+
+    #####################
+    ### Last Log View ###
+    #####################
+
+    log = LogViewDialog(mainWindow)
+    setScreenshotTimer(log, '_images/last_log_view.png')
+
+    sn.remove(snapshots.lastSnapshot(cfg))
+
+    #############################
+    ### create fake snapshots ###
+    #############################
 
     for d, t in ((date.today(), time(hour = 21, minute = 10, second = 14)),
                  (date.today(), time(hour = 17, minute = 53, second = 52)),
@@ -81,11 +156,6 @@ with TemporaryDirectory() as tmp:
                  ):
         sid = snapshots.SID(datetime.combine(d, t), cfg)
         sid.makeDirs()
-
-    global qapp
-    qapp = qttools.createQApplication(cfg.APP_NAME)
-    translator = qttools.translator()
-    qapp.installTranslator(translator)
 
     ###################
     ### Main Window ###
@@ -100,6 +170,28 @@ with TemporaryDirectory() as tmp:
     mainWindow.filesView.header().resizeSection(1, 45)
 
     setScreenshotTimer(mainWindow, '_images/main_window.png')
+
+    ######################
+    ### Restore Dialog ###
+    ######################
+
+    mainWindow = app.MainWindow(cfg, appInstance, qapp)
+    setScreenshotTimerDlg(mainWindow,
+                          lambda: mainWindow.confirmRestore(('/home/janedoe/Documents',
+                                                             '/home/janedoe/Pictures')),
+                          '_images/restore_confirm.png')
+
+    ########################
+    ### Snapshots Dialog ###
+    ########################
+
+    snDlg = SnapshotsDialog(mainWindow, snapshots.NewSnapshot(cfg), '/home/janedoe/foo')
+    snDlg.addSnapshot(rootSid)
+    snDlg.comboEqualTo.addSnapshotID(rootSid)
+    for sid in mainWindow.snapshotsList:
+        snDlg.addSnapshot(sid)
+    snDlg.cbDeepCheck.setEnabled(True)
+    setScreenshotTimer(snDlg, '_images/snapshotsdialog.png', None, None)
 
     #################################
     ### Settings Dialog - General ###
