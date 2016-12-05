@@ -108,18 +108,6 @@ Files Toolbar
         Restore the currently shown folder and all its content to a new
         destination.
 
-    |restore| Restore and delete new files
-        Restore selected files or folders to the original destination and
-        delete files/folders which do not exist in the snapshot. This will also
-        delete files/folders which where excluded during taking the snapshot!
-        Be extremely careful!!!
-
-    |restore| Restore '/path' and delete new files
-        Restore the currently shown folder and all its content to the original
-        destination and delete files/folders which do not exist in the snapshot.
-        This will also delete files/folders which where excluded during taking
-        the snapshot! Be extremely careful!!!
-
 |snapshots| Snapshots
     Open :doc:`/snapshotsdialog`.
 
