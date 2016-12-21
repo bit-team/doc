@@ -1,5 +1,5 @@
-.. |folder|   image:: _images/folder.svg
-.. |add|      image:: _images/list-add.svg
+.. |folder|   image:: _images/folder_btn.svg
+.. |add|      image:: _images/list-add_btn.svg
 
 Settings
 ========

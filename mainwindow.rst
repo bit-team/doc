@@ -13,16 +13,16 @@ Overview
 Main Toolbar
 ++++++++++++
 
-.. |take_snapshot|      image:: _images/document-save.svg
-.. |refresh_snapshot|   image:: _images/view-refresh.svg
-.. |snapshot_name|      image:: _images/gtk-edit.svg
-.. |remove_snapshot|    image:: _images/edit-delete.svg
-.. |view_snapshot_log|  image:: _images/text-plain.svg
-.. |view_last_log|      image:: _images/document-new.svg
-.. |settings|           image:: _images/gtk-preferences.svg
-.. |shutdown|           image:: _images/system-shutdown.svg
-.. |exit|               image:: _images/window-close.svg
-.. |help|               image:: _images/help-contents.svg
+.. |take_snapshot|      image:: _images/document-save_btn.svg
+.. |refresh_snapshot|   image:: _images/view-refresh_btn.svg
+.. |snapshot_name|      image:: _images/gtk-edit_btn.svg
+.. |remove_snapshot|    image:: _images/edit-delete_btn.svg
+.. |view_snapshot_log|  image:: _images/text-plain_btn.svg
+.. |view_last_log|      image:: _images/document-new_btn.svg
+.. |settings|           image:: _images/gtk-preferences_btn.svg
+.. |shutdown|           image:: _images/system-shutdown_btn.svg
+.. |exit|               image:: _images/window-close_btn.svg
+.. |help|               image:: _images/help-contents_btn.svg
 
 |take_snapshot| Take Snapshot
     Take a new Snapshot in background. The main window can be closed during
@@ -74,13 +74,11 @@ Main Toolbar
 Files Toolbar
 +++++++++++++
 
-.. |up|             image:: _images/go-up.svg
-.. |show_hidden|    image:: _images/show-hidden.svg
-.. |restore|        image:: _images/edit-undo.svg
-                        :width: 16
-                        :height: 16
-.. |restore_to|     image:: _images/document-revert.svg
-.. |snapshots|      image:: _images/file-manager.svg
+.. |up|             image:: _images/go-up_btn.svg
+.. |show_hidden|    image:: _images/show-hidden_btn.svg
+.. |restore|        image:: _images/edit-undo_btn.svg
+.. |restore_to|     image:: _images/document-revert_btn.svg
+.. |snapshots|      image:: _images/file-manager_btn.svg
 
 |up| Up
     Go to the parent folder.
