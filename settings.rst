@@ -167,6 +167,53 @@ below. You can change them to match paths from other machines.
 Schedule
 --------
 
+You can choose between couple different schedules which will automatically start
+a new snapshot. Most of them will use ``crontab`` to set up new schedules. You
+can use ``crontab -l`` to view them or ``crontab -e`` to edit.
+
+- **At every boot/reboot**: start a new snapshot immediately after startup. This
+  will add a ``@reboot <COMMAND>`` line in ``crontab``. Wake up from
+  suspend/hibernate will not trigger this schedule.
+- **Every X minutes**: start a new snapshot every 5, 10 or 30 minutes. This will
+  add a line ``*/<X> * * * * <COMMAND>`` in ``crontab``.
+- **Every hour**: start a new snapshot on every full hour. This will add a line
+  ``0 * * * * <COMMAND>`` in ``crontab``.
+- **Every X hours**: start a new snapshot every 2, 4, 6 or 12 hours at the full
+  hour (e.g. at `0:00`, `6:00`, `12:00` and `18:00` with schedule
+  `Every 6 hours`). This will add a line ``0 */<X> * * * <COMMAND>`` in
+  ``crontab``. If the computer is not running at scheduled time there will be no
+  new snapshot. This will not resume after switching on again.
+- **Custom Hours**: define custom pattern for ``crontab``. This can be either a
+  comma separated list of hours (e.g `0,10,13,15,17,20,23`) or `*/<X>`
+  (e.g. `*/3`) for periodic schedules. This will add a line
+  ``0 0,10,13,15,17,20,23 * * * <COMMAND>`` in ``crontab``. If the computer is
+  not running at scheduled time there will be no new snapshot. This will not
+  resume after switching on again.
+- **Every Day**: start a new snapshot on a configurable time on every day. If
+  the computer is not running at the configured time there will be no new
+  snapshot for the day.
+- **Repeatedly (anacron)**: this schedule will start new snapshots after a
+  configurable time (hours, days or weeks) when the last snapshot was done
+  before this delay. This will also work when the system was powered off. It
+  does imitate `anacron` but doesn't use it. Instead `Back in Time` writes it's
+  own time-stamp after each successful snapshot and add a ``crontab`` job which
+  will start `Back in Time` every 15min (or every hour if configured for weeks).
+  If the configured delay is not done yet it will just exit immediately. If an
+  error occurred during taking the snapshot it won't write a new time-stamp and
+  so will try again after 15min/one hour.
+- **When drive get connected (udev)**: this schedule will start a new snapshot
+  as soon as the USB/eSATA/Firewire drive get connected. You can configure a
+  delay (hours, days or weeks like in schedule `Repeatedly`) so it won't start
+  on `every` new connection. This will add a new udev rule in
+  ``/etc/udev/rules.d/99-backintime-<USER>.rules`` using the partitions UUID.
+  If using KDE you need to enable auto-mount for the device in System-Settings.
+- **Every Week**: start a new snapshot on a configurable week-day/time every
+  week. If the computer is not running at the configured time there will be no
+  new snapshot for the week.
+- **Every Month**: start a new snapshot on a configurable day/time every month.
+  If the computer is not running at the configured time there will be no
+  new snapshot for the month.
+
 Include
 +++++++
 
