@@ -1,0 +1,10 @@
+/*
+:Author: Germar Reitze
+:Copyright: This stylesheet has been placed in the public domain.
+
+Stylesheet for use with Sphinx
+
+/* increase left margin in description lists */
+
+.rst-content dl dd {
+  margin: 0 0 12px 35px;}
