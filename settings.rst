@@ -33,10 +33,11 @@ Samba (SMB/CIFS) servers doesn't support symlinks (can be activated with
     :target: _images/settings_general.png
     :alt:    Settings - General
 
-Choose the destination path for snapshots with the |folder| `Folder` button.
-`Back in Time` will create sub-folders ``backintime/<HOST>/<USER>/<PROFILE>/``
-inside that folder. Snapshots will be placed inside the ``<PROFILE>/``
-folder.
+Choose the destination path for snapshots with the |folder| `Folder` button (to
+show hidden files use :kbd:`CTRL` + :kbd:`H` or context menu with right mouse
+button). `Back in Time` will create sub-folders
+``backintime/<HOST>/<USER>/<PROFILE>/`` inside that folder. Snapshots will be
+placed inside the ``<PROFILE>/`` folder.
 
 Local Encrypted
 ---------------
