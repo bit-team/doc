@@ -13,10 +13,10 @@
    id="svg3055"
    version="1.1"
    inkscape:version="0.91 r13725"
-   width="851"
-   height="528"
+   width="742"
+   height="529"
    sodipodi:docname="main_window_sections.svg"
-   inkscape:export-filename="/home/germar/Dokumente/workspace/doc/_images/main_window_sections.png"
+   inkscape:export-filename="main_window_sections.png"
    inkscape:export-xdpi="87"
    inkscape:export-ydpi="87">
   <metadata
@@ -27,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -42,8 +42,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1593"
-     inkscape:window-height="968"
+     inkscape:window-width="971"
+     inkscape:window-height="576"
      id="namedview3057"
      showgrid="false"
      showguides="true"
@@ -51,16 +51,18 @@
      inkscape:snap-global="false"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
-     inkscape:zoom="1.0579817"
-     inkscape:cx="200.52438"
-     inkscape:cy="333.62436"
-     inkscape:window-x="85"
-     inkscape:window-y="34"
-     inkscape:window-maximized="0"
+     inkscape:zoom="2.1159634"
+     inkscape:cx="723.22576"
+     inkscape:cy="20.891352"
+     inkscape:window-x="53"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg3055"
      inkscape:snap-intersection-paths="true"
      inkscape:bbox-nodes="true"
-     inkscape:snap-others="true">
+     inkscape:snap-others="true"
+     fit-margin-left="-2.7755576e-17"
+     borderlayer="true">
     <sodipodi:guide
        orientation="0,1"
        position="813.8137,454.63925"
@@ -95,108 +97,113 @@
        id="guide3879" />
   </sodipodi:namedview>
   <image
-     sodipodi:absref="/home/germar/Dokumente/workspace/doc/_images/main_window.png"
+     sodipodi:absref="/home/germar/workspace/doc/_images/main_window.png"
      xlink:href="main_window.png"
-     y="0"
-     x="0"
-     id="image3063"
+     mask="none"
+     width="851"
      height="528"
-     width="851" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:1;stroke:none"
-     x="448.41144"
-     y="63.273888"
-     id="text3065"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3067"
+     id="image3063"
+     x="-54.5"
+     y="0.5" />
+  <g
+     id="g3356"
+     transform="translate(-55.865585,0.787547)">
+    <text
+       sodipodi:linespacing="125%"
+       id="text3065"
+       y="64.273888"
        x="448.41144"
-       y="63.273888"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;stroke:none">Main Toolbar</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:1;stroke:none"
-     x="93.700592"
-     y="383.94937"
-     id="text3069"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3071"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;stroke:none"
+         y="64.273888"
+         x="448.41144"
+         id="tspan3067"
+         sodipodi:role="line">Main Toolbar</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3069"
+       y="384.94937"
        x="93.700592"
-       y="383.94937">Timeline</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:1;stroke:none"
-     x="459.83118"
-     y="383.94937"
-     id="text3073"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3075"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="384.94937"
+         x="93.700592"
+         id="tspan3071"
+         sodipodi:role="line">Timeline</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3073"
+       y="384.94937"
        x="459.83118"
-       y="383.94937">Files View</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:1;stroke:none"
-     x="449.9133"
-     y="119.30099"
-     id="text3077"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3079"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="384.94937"
+         x="459.83118"
+         id="tspan3075"
+         sodipodi:role="line">Files View</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3077"
+       y="120.30099"
        x="449.9133"
-       y="119.30099">Files Toolbar</tspan></text>
-  <rect
-     style="fill:none;stroke:#ff6600;stroke-width:1.79773116;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect3867"
-     width="717.4964"
-     height="35.323185"
-     x="66.117386"
-     y="37.138699"
-     rx="0.4333761"
-     ry="0" />
-  <rect
-     style="fill:none;stroke:#ff6600;stroke-width:1.87513566;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect3869"
-     width="560.51642"
-     height="54.836624"
-     x="223.05861"
-     y="74.298317"
-     rx="0.33069855" />
-  <rect
-     style="fill:none;stroke:#ff6600;stroke-width:1.69278216;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect3873"
-     width="155.20975"
-     height="411.35785"
-     x="66.064911"
-     y="74.207138"
-     rx="0.38188162" />
-  <rect
-     style="fill:none;stroke:#ff6600;stroke-width:1.78885734;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect3875"
-     width="560.60272"
-     height="354.55002"
-     x="223.01547"
-     y="130.96693"
-     rx="0.4350774" />
-  <rect
-     style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff6600;stroke-width:1.74894202;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect3770"
-     width="717.54517"
-     height="29.024744"
-     x="66.092995"
-     y="487.28586"
-     rx="0.70539141" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:1;stroke:none"
-     x="459.36523"
-     y="508.16446"
-     id="text3772"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan3774"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="120.30099"
+         x="449.9133"
+         id="tspan3079"
+         sodipodi:role="line">Files Toolbar</tspan></text>
+    <rect
+       ry="0"
+       rx="0.4333761"
+       y="38.138699"
+       x="66.117386"
+       height="35.323185"
+       width="717.4964"
+       id="rect3867"
+       style="fill:none;stroke:#ff6600;stroke-width:1.79773116;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       rx="0.33069855"
+       y="75.298317"
+       x="223.05861"
+       height="54.836624"
+       width="560.51642"
+       id="rect3869"
+       style="fill:none;stroke:#ff6600;stroke-width:1.87513566;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       rx="0.38188162"
+       y="75.207138"
+       x="66.064911"
+       height="411.35785"
+       width="155.20975"
+       id="rect3873"
+       style="fill:none;stroke:#ff6600;stroke-width:1.69278216;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       rx="0.4350774"
+       y="131.96693"
+       x="223.01547"
+       height="354.55002"
+       width="560.60272"
+       id="rect3875"
+       style="fill:none;stroke:#ff6600;stroke-width:1.78885734;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       rx="0.70539141"
+       y="488.28586"
+       x="66.092995"
+       height="29.024744"
+       width="717.54517"
+       id="rect3770"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff6600;stroke-width:1.74894202;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3772"
+       y="509.16446"
        x="459.36523"
-       y="508.16446">Statusbar</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff6600;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="509.16446"
+         x="459.36523"
+         id="tspan3774"
+         sodipodi:role="line">Statusbar</tspan></text>
+  </g>
 </svg>
