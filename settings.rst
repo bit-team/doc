@@ -77,7 +77,8 @@ This mode will store snapshots on a remote host which is available through
 faster than syncing to a local mounted share.
 
 In order to use this mode the remote host need to be in your ``known_hosts``
-file. You need to have a public/private SSH key pair installed on the remote
+file. Keep in mind that hostnames treated case-sensitive in that file. You
+need to have a public/private SSH key pair installed on the remote
 host. Starting with `Back in Time` version 1.2.0 this will be done
 automatically. For versions lower than 1.2.0 you need to do this manually:
 
