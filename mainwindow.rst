@@ -26,12 +26,12 @@ Main Toolbar
 
 |take_snapshot| Take Snapshot
     Take a new Snapshot in background. The main window can be closed during
-    taking the snapshot. You can alternative take a new Snapshot with
+    taking the snapshot. Normal behavior is to only compare files size and
+    modification time. You can alternative take a new Snapshot with
     ``checksums`` option enabled. This will calculate checksums for every
-    file to decide if the file has changed. Normal behavior is to only compare
-    files size and modification time. Taking a snapshot with checksums option
-    takes a lot more time but it will make sure, the destination files won't
-    be corrupt.
+    file to decide if the file has changed. Taking a snapshot with checksums
+    option takes a lot more time but it will make sure, the destination files
+    won't be corrupt.
 
 |refresh_snapshot| Refresh Snapshots List
     Refresh the Snapshots in `Timeline`_.
