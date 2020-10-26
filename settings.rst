@@ -22,12 +22,12 @@ Available modes:
 Local
 -----
 
-Local snapshots can be stored on internal or external hard-drive or on mounted
+Local snapshots can be stored on internal or external hard-drives or on mounted
 shares. The destination file-system must support hard-links. Also the protocol
 used to mount the remote share must support hard-links and symlinks. By default
-Samba (SMB/CIFS) servers doesn't support symlinks (can be activated with
+Samba (SMB/CIFS) servers do not support symlinks (can be activated with
 ``follow symlinks = yes`` and ``wide links = yes`` in ``/etc/samba/smb.conf``).
-`sshfs` mounted shares doesn't support hard-links.
+`sshfs` mounted shares do not support hard-links.
 
 .. image:: _images/settings_general.png
     :target: _images/settings_general.png
