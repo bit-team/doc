@@ -3,8 +3,8 @@
 [![Documentation Status](https://readthedocs.org/projects/backintime/badge/?version=latest)](http://backintime.readthedocs.org/en/latest/?badge=latest)
 
 
-This is the source of the new documentation of Back In Time. The documentation
-it self is in http://backintime.rtfd.org/
+This is the source of the documentation of [Back In Time](https://github.com/bit-team/backintime). The documentation
+it self is in [backintime.rtfd.org](https://backintime.rtfd.org/). See the [Back In Time repository](https://github.com/bit-team/backintime) repository for further information and an [issue tracker](https://github.com/bit-team/backintime/issues).
 
 ## Contribute
 
