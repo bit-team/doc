@@ -18,17 +18,16 @@
 import sys
 import os
 import subprocess
-from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import QTimer
 from PyQt5.QtWidgets import QDialog
-from tempfile import TemporaryDirectory, NamedTemporaryFile
-from time import sleep
+from tempfile import TemporaryDirectory
 from datetime import date, time, datetime, timedelta
 
 os.environ['LANGUAGE'] = 'en_US.UTF-8'
 
 sys.path.insert(0, '../backintime/common')
 sys.path.insert(0, '../backintime/qt')
+
 import app
 import settingsdialog
 import qttools
@@ -37,6 +36,7 @@ import snapshots
 from guiapplicationinstance import GUIApplicationInstance
 from snapshotsdialog import SnapshotsDialog
 from logviewdialog import LogViewDialog
+
 
 def setScreenshotTimer(widget, filename, width = 720, hight = 480):
     widget.move(100, 50)
@@ -56,6 +56,7 @@ def setScreenshotTimer(widget, filename, width = 720, hight = 480):
     scrTimer.start()
     quitTimer.start()
     qapp.exec_()
+
 
 def setScreenshotTimerDlg(mainWindow, dlgFunct, filename):
     def close():
@@ -96,11 +97,13 @@ def setScreenshotTimerDlg(mainWindow, dlgFunct, filename):
     dlgMoveTimer.start()
     qapp.exec_()
 
+
 def takeScreenshot(filename):
     cmd = ['scrot', '-b', '-u', filename]
     # print(cmd)
     proc = subprocess.Popen(cmd)
     proc.communicate()
+
 
 with TemporaryDirectory() as tmp:
     cfgFile = os.path.join(tmp, 'config')
@@ -125,7 +128,9 @@ with TemporaryDirectory() as tmp:
     ### Snapshot Log View ###
     #########################
 
-    cmd = ['../backintime/common/backintime', '--config', cfgFile, 'backup']
+    backintime_exec = '../backintime/common/backintime'
+    # backintime_exec = 'backintime'
+    cmd = [backintime_exec, '--config', cfgFile, 'backup']
     proc = subprocess.Popen(cmd)
     proc.communicate()
 
