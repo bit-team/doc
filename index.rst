@@ -16,6 +16,7 @@ Contents:
     settings
     snapshotsdialog
     log
+    additional
 
 ------------
 
