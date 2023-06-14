@@ -204,7 +204,7 @@ def setup(app):
     """
     add custom stylesheet
     """
-    app.add_stylesheet("css/custom.css")
+    app.add_css_file('css/custom.css')
 
 # -- Options for LaTeX output ---------------------------------------------
 
