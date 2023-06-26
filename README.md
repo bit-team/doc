@@ -1,4 +1,4 @@
-# Users documentation of Back In Time
+# Users documentation of Back In Time [![Documentation Status](https://readthedocs.org/projects/backintime/badge)](https://backintime.readthedocs.io)
 This is the source repository for [User
 Documentation](https://backintime.readthedocs.io) of [Back In
 Time](https://github.com/bit-team/backintime).
