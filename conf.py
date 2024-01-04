@@ -30,7 +30,9 @@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = [
+    'sphinx_rtd_theme'
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -147,7 +149,7 @@ html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-html_last_updated_fmt = '%b %d, %Y, %H:%M'
+html_last_updated_fmt = '%b %d, %Y, %H:%M (%Z)'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
