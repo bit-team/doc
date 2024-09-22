@@ -1,6 +1,8 @@
-# Users documentation of Back In Time [![Documentation Status](https://readthedocs.org/projects/backintime/badge)](https://backintime.readthedocs.io)
-This is the source repository for [User
-Documentation](https://backintime.readthedocs.io) of [Back In
+# Deprecated
+The content and functionality of this repository have been moved into the [bit-team/backintime](https://github.com/bit-team/backintime) repository. Please refer to the `doc/manual` folder there. This repository will be removed in the near future.
+
+# Users documentation of Back In Timef
+This is the source repository for [User Documentation](https://backintime.readthedocs.io) of [Back In
 Time](https://github.com/bit-team/backintime).
 
 Feel free to [open issues](https://github.com/bit-team/backintime/issues).
